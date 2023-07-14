@@ -1,0 +1,75 @@
+<html lang="en"><head><meta charset="UTF-8"></meta><meta name="viewport" content="width=device-width, initial-scale=1"></meta><link rel="stylesheet" href="../.././style.css"></link><link rel="stylesheet" href="../.././src/pygments.css"></link><link rel="shortcut icon" href="../.././favicon.ico"></link><link rel="prefetch" href="../.././/declarations/declaration-data.bmp" as="image"></link><title>Pretty.Claims.MeasRender</title><script defer="true" src="../.././mathjax-config.js"></script><script defer="true" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script defer="true" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>const SITE_ROOT="../.././";</script><script>const MODULE_NAME="Pretty.Claims.MeasRender";</script><script type="module" src="../.././search.js"></script><script type="module" src="../.././how-about.js"></script><script type="module" src="../.././instances.js"></script><script type="module" src="../.././importedBy.js"></script></head><body><input id="nav_toggle" type="checkbox"></input><header><h1><label for="nav_toggle"></label>Documentation</h1><p class="header_filename break_within"><span class="name">Pretty</span>.<span class="name">Claims</span>.<span class="name">MeasRender</span></p><form action="https://google.com/search" method="get" id="search_form"><input type="hidden" name="sitesearch" value="https://leanprover-community.github.io/mathlib4_docs"></input><input type="text" name="q" autocomplete="off"></input>&#32;
+            <button id="search_button" onclick="javascript: form.action='../.././search.html';">Search</button><button>Google site search</button></form></header><nav class="internal_nav"><h3><a class="break_within" href="#top"><span class="name">Pretty</span>.<span class="name">Claims</span>.<span class="name">MeasRender</span></a></h3><p class="gh_nav_link"><a href="https://github.com/sorawee/pretty-artifact/blob/c37195b5ccef79262054627b2b051de77ac4fe0e/Pretty/Claims/MeasRender.lean">source</a></p><div class="imports"><details><summary>Imports</summary><ul><li><a href="../.././Init.html">Init</a></li><li><a href="../.././Pretty/Claims/Render.html">Pretty.Claims.Render</a></li><li><a href="../.././Pretty/Defs/Basic.html">Pretty.Defs.Basic</a></li><li><a href="../.././Pretty/Supports/FactoryMath.html">Pretty.Supports.FactoryMath</a></li></ul></details><details><summary>Imported by</summary><ul id="imported-by-Pretty.Claims.MeasRender" class="imported-by-list"></ul></details></div><div class="nav_link"><a class="break_within" href="#MeasRender_deterministic"><span class="name">MeasRender_deterministic</span></a></div><div class="nav_link"><a class="break_within" href="#MeasRender_single_correct"><span class="name">MeasRender_single_correct</span></a></div><div class="nav_link"><a class="break_within" href="#MeasRender_multi_correct"><span class="name">MeasRender_multi_correct</span></a></div><div class="nav_link"><a class="break_within" href="#MeasRender_total"><span class="name">MeasRender_total</span></a></div></nav><main>
+<div class="mod_doc"><h2 class="markdown-heading" id="Theorems-about-the-measure-computation-rendering-relation-$⇓-mathbb-M-$">Theorems about the measure computation/rendering relation ($⇓_\mathbb{M}$) <a class="hover-link" href="#Theorems-about-the-measure-computation-rendering-relation-$⇓-mathbb-M-$">#</a></h2></div><div class="decl" id="MeasRender_deterministic"><div class="theorem"><div class="gh_link"><a href="https://github.com/sorawee/pretty-artifact/blob/c37195b5ccef79262054627b2b051de77ac4fe0e/Pretty/Claims/MeasRender.lean#L12-L26">source</a></div><div class="ink_link"><a href="../.././src/Pretty/Claims/MeasRender.html#MeasRender_deterministic">ink</a></div><div class="decl_header"><span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="../.././Pretty/Claims/MeasRender.html#MeasRender_deterministic"><span class="name">MeasRender_deterministic</span></a></span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{α : <a href="../.././foundational_types.html">Type</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{d : <a href="../.././Pretty/Defs/Basic.html#Doc">Doc</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{c : <a href="../.././Init/Prelude.html#Nat">ℕ</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{i : <a href="../.././Init/Prelude.html#Nat">ℕ</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{F : <span class="fn"><a href="../.././Pretty/Defs/Factory.html#Factory">Factory</a> <span class="fn">α</span></span>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{m₁ : <span class="fn">Meas</span>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{m₂ : <span class="fn">Meas</span>}</span></span>
+</span><span class="decl_args">
+<span class="fn">(h₁ : <span class="fn"><a href="../.././Pretty/Defs/Basic.html#MeasRender">MeasRender</a> <span class="fn">F</span> <span class="fn">d</span> <span class="fn">c</span> <span class="fn">i</span> <span class="fn">m₁</span></span>)</span></span>
+<span class="decl_args">
+<span class="fn">(h₂ : <span class="fn"><a href="../.././Pretty/Defs/Basic.html#MeasRender">MeasRender</a> <span class="fn">F</span> <span class="fn">d</span> <span class="fn">c</span> <span class="fn">i</span> <span class="fn">m₂</span></span>)</span></span>
+<span class="decl_args"> :</span><div class="decl_type"><span class="fn"><span class="fn">m₁</span> <a href="../.././Init/Prelude.html#Eq">=</a> <span class="fn">m₂</span></span></div></div><p>Determinism of the measure computation relation (Section 5.3)</p></div></div><div class="decl" id="MeasRender_single_correct"><div class="theorem"><div class="gh_link"><a href="https://github.com/sorawee/pretty-artifact/blob/c37195b5ccef79262054627b2b051de77ac4fe0e/Pretty/Claims/MeasRender.lean#L32-L83">source</a></div><div class="ink_link"><a href="../.././src/Pretty/Claims/MeasRender.html#MeasRender_single_correct">ink</a></div><div class="decl_header"><span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="../.././Pretty/Claims/MeasRender.html#MeasRender_single_correct"><span class="name">MeasRender_single_correct</span></a></span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{α : <a href="../.././foundational_types.html">Type</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{d : <a href="../.././Pretty/Defs/Basic.html#Doc">Doc</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{c : <a href="../.././Init/Prelude.html#Nat">ℕ</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{i : <a href="../.././Init/Prelude.html#Nat">ℕ</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{s : <a href="../.././Init/Prelude.html#String">String</a>}</span></span>
+</span><span class="decl_args">
+<span class="fn">(F : <span class="fn"><a href="../.././Pretty/Defs/Factory.html#Factory">Factory</a> <span class="fn">α</span></span>)</span></span>
+<span class="decl_args">
+<span class="fn">(h_render : <span class="fn"><a href="../.././Pretty/Defs/Basic.html#Render">Render</a> <span class="fn">d</span> <span class="fn">c</span> <span class="fn">i</span> <span class="fn">{ <span class="fn">fst</span> := <span class="fn">s</span>, <span class="fn">rst</span> := <span class="fn">[]</span> }</span></span>)</span></span>
+<span class="decl_args"> :</span><div class="decl_type"><span class="fn">∃ <span class="fn">cost </span><span class="fn">y</span>, <span class="fn"><a href="../.././Pretty/Defs/Basic.html#MeasRender">MeasRender</a> <span class="fn">F</span> <span class="fn">d</span> <span class="fn">c</span> <span class="fn">i</span> <span class="fn">{ <span class="fn">last</span> := <span class="fn"><span class="fn">c</span> <a href="../.././Init/Prelude.html#HAdd.hAdd">+</a> <span class="fn"><a href="../.././Init/Data/String/Basic.html#String.length">String.length</a> <span class="fn">s</span></span></span>, <span class="fn">cost</span> := <span class="fn">cost</span>, <span class="fn">doc</span> := <span class="fn">d</span>, <span class="fn">x</span> := <span class="fn"><span class="fn">c</span> <a href="../.././Init/Prelude.html#HAdd.hAdd">+</a> <span class="fn"><a href="../.././Init/Data/String/Basic.html#String.length">String.length</a> <span class="fn">s</span></span></span>, <span class="fn">y</span> := <span class="fn">y</span> }</span></span></span></div></div><p>Correctness of the measure computation relation
+when it results in one line (first part of Theorem 5.3)</p></div></div><div class="decl" id="MeasRender_multi_correct"><div class="theorem"><div class="gh_link"><a href="https://github.com/sorawee/pretty-artifact/blob/c37195b5ccef79262054627b2b051de77ac4fe0e/Pretty/Claims/MeasRender.lean#L89-L184">source</a></div><div class="ink_link"><a href="../.././src/Pretty/Claims/MeasRender.html#MeasRender_multi_correct">ink</a></div><div class="decl_header"><span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="../.././Pretty/Claims/MeasRender.html#MeasRender_multi_correct"><span class="name">MeasRender_multi_correct</span></a></span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{α : <a href="../.././foundational_types.html">Type</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{d : <a href="../.././Pretty/Defs/Basic.html#Doc">Doc</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{c : <a href="../.././Init/Prelude.html#Nat">ℕ</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{i : <a href="../.././Init/Prelude.html#Nat">ℕ</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{s : <a href="../.././Init/Prelude.html#String">String</a>}</span></span>
+</span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{ss : <span class="fn"><a href="../.././Init/Prelude.html#List">List</a> <a href="../.././Init/Prelude.html#String">String</a></span>}</span></span>
+</span><span class="decl_args">
+<span class="fn">(F : <span class="fn"><a href="../.././Pretty/Defs/Factory.html#Factory">Factory</a> <span class="fn">α</span></span>)</span></span>
+<span class="decl_args">
+<span class="fn">(h_render : <span class="fn"><a href="../.././Pretty/Defs/Basic.html#Render">Render</a> <span class="fn">d</span> <span class="fn">c</span> <span class="fn">i</span> <span class="fn">{ <span class="fn">fst</span> := <span class="fn">s</span>, <span class="fn">rst</span> := <span class="fn">ss</span> }</span></span>)</span></span>
+<span class="decl_args">
+<span class="fn">(h_non_empty : <span class="fn"><span class="fn">ss</span> <a href="../.././Init/Core.html#Ne">≠</a> <span class="fn">[]</span></span>)</span></span>
+<span class="decl_args"> :</span><div class="decl_type"><span class="fn">∃ <span class="fn">cost </span><span class="fn">y</span>,
+  <span class="fn"><a href="../.././Pretty/Defs/Basic.html#MeasRender">MeasRender</a> <span class="fn">F</span> <span class="fn">d</span> <span class="fn">c</span> <span class="fn">i</span>
+    <span class="fn">{ <span class="fn">last</span> := <span class="fn"><a href="../.././Init/Data/String/Basic.html#String.length">String.length</a> (<span class="fn"><a href="../.././Init/Data/List/BasicAux.html#List.getLast">List.getLast</a> <span class="fn">ss</span> <span class="fn">h_non_empty</span></span>)</span>, <span class="fn">cost</span> := <span class="fn">cost</span>, <span class="fn">doc</span> := <span class="fn">d</span>,
+      <span class="fn">x</span> := <span class="fn"><a href="../.././Pretty/Defs/Basic.html#Layout.max_with_offset">Layout.max_with_offset</a> <span class="fn">c</span> <span class="fn">{ <span class="fn">fst</span> := <span class="fn">s</span>, <span class="fn">rst</span> := <span class="fn">ss</span> }</span></span>, <span class="fn">y</span> := <span class="fn">y</span> }</span></span></span></div></div><p>Correctness of the measure computation relation
+when it results in multiple lines (second part of Theorem 5.3)</p></div></div><div class="decl" id="MeasRender_total"><div class="theorem"><div class="gh_link"><a href="https://github.com/sorawee/pretty-artifact/blob/c37195b5ccef79262054627b2b051de77ac4fe0e/Pretty/Claims/MeasRender.lean#L189-L199">source</a></div><div class="ink_link"><a href="../.././src/Pretty/Claims/MeasRender.html#MeasRender_total">ink</a></div><div class="decl_header"><span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="../.././Pretty/Claims/MeasRender.html#MeasRender_total"><span class="name">MeasRender_total</span></a></span><span class="impl_arg"><span class="decl_args">
+<span class="fn">{α : <a href="../.././foundational_types.html">Type</a>}</span></span>
+</span><span class="decl_args">
+<span class="fn">(F : <span class="fn"><a href="../.././Pretty/Defs/Factory.html#Factory">Factory</a> <span class="fn">α</span></span>)</span></span>
+<span class="decl_args">
+<span class="fn">(d : <a href="../.././Pretty/Defs/Basic.html#Doc">Doc</a>)</span></span>
+<span class="decl_args">
+<span class="fn">(c : <a href="../.././Init/Prelude.html#Nat">ℕ</a>)</span></span>
+<span class="decl_args">
+<span class="fn">(i : <a href="../.././Init/Prelude.html#Nat">ℕ</a>)</span></span>
+<span class="decl_args">
+<span class="fn">(h : <span class="fn"><a href="../.././Pretty/Defs/Basic.html#Choiceless">Choiceless</a> <span class="fn">d</span></span>)</span></span>
+<span class="decl_args"> :</span><div class="decl_type"><span class="fn">∃ <span class="fn">m</span>, <span class="fn"><a href="../.././Pretty/Defs/Basic.html#MeasRender">MeasRender</a> <span class="fn">F</span> <span class="fn">d</span> <span class="fn">c</span> <span class="fn">i</span> <span class="fn">m</span></span></span></div></div><p>Totality of the measure computation relation (Section 5.3)</p></div></div></main>
+<nav class="nav"><iframe src="../.././navbar.html" class="navframe" frameBorder="0"></iframe></nav></body></html>
